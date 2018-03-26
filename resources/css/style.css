@@ -1,0 +1,485 @@
+html,
+body {
+	background-color: #ffffff;
+	color: #4a4a4a;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Avenir-Book', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+/*Custom Fonts*/
+
+@font-face {
+	font-family: Avenir-Light;
+	src: url("../fonts/AvenirLTStd-Light.otf");
+}
+
+@font-face {
+	font-family: Avenir-Book;
+	src: url("../fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+	font-family: Gotham-Thin;
+	src: url("../fonts/Gotham-Thin.otf");
+}
+
+@font-face {
+	font-family: Gotham-Book;
+	src: url("../fonts/Gotham-Book.otf");
+}
+
+@font-face {
+	font-family: Gotham-Medium;
+	src: url("../fonts/Gotham-Medium.otf");
+}
+
+a {
+	color: #4a90e2;
+	text-decoration: none;
+	font-family: 'Avenir-Book', Arial, Helvetica, sans-serif;
+}
+
+/*Desktop Viewport Styles*/
+.Mobile {
+	display: none;
+}
+
+/*Base Font Styles*/
+h1,
+h2,
+h3 {
+	font-family: 'Gotham-Medium', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin: 32px 0px;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p,
+.Copy span,
+.Card span {
+	line-height: 1.3;
+}
+
+.Bold {
+	font-weight: bold;
+}
+
+/*General Container Styles*/
+.Container,
+.Hero,
+.Item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Max {
+	max-width: 1400px;
+	width: 100%;
+	display: flex;
+}
+
+.White {
+	background-color: #f3f5f5;
+}
+
+.Light {
+	background-color: #eaebec;
+}
+
+.Medium {
+	background-color: #d8d8d8;
+}
+
+.Gray {
+	background-color: #4a4a4a;
+}
+
+/*Header Styles*/
+header {
+	height: 64px;
+	padding: 0 24px;
+}
+
+header .Desktop,
+.Logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1400px;
+}
+
+.Logo {
+	width: auto;
+	height: 32px;
+	text-transform: uppercase;
+	color: #9b9b9b;
+	font-family: 'Gotham-Book', Arial, Helvetica, sans-serif;
+}
+
+.Logo .Bold {
+	color: #4a4a4a;
+	font-family: 'Gotham-Medium', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+nav a {
+	color: #4a4a4a;
+	margin-right: 16px;
+	transition-duration: 0.3s;
+}
+
+nav a:last-of-type {
+	margin-right: 0;
+}
+
+nav a:hover {
+	color: #4a90e2;
+	transition-duration: 0.3s;
+}
+
+/*Hero Styles*/
+.Hero .Max {
+	margin: 32px 24px;
+}
+
+.Hero .Max {
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.Hero img,
+.MainFeature /*Reusing style for other section*/ {
+	width: 60%;
+	margin-right: 24px;
+}
+
+.Hero .Copy,
+.SecondaryFeature {
+	width: calc(40% - 24px);
+}
+
+.Hero p {
+	font-size: 1.25rem;
+	margin: 30px 0;
+}
+
+a.button {
+	width: 100%;
+	padding: 15px 0;
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	transition-duration: 0.3s;
+}
+
+a.Gray:Hover {
+	background-color: #4a90e2;
+	transition-duration: 0.3s;
+}
+
+/*Content Section Styles*/
+.Main .Max,
+.Thesis .Max{
+	margin: 0px 24px;
+}
+
+.MainFeature {
+	margin: 32px 24px 32px 0px;
+}
+
+.MainFeature img,
+.MainFeature video {
+	width: 100%;
+}
+
+.Tagline {
+	display: block;
+	margin-top: 32px;
+	font-family: 'Avenir-Light', Arial, Helvetica, sans-serif;
+	opacity: 0.85;
+}
+
+.SecondaryFeature {
+	border-left: 1px solid #d8d8d8;
+	padding-top: 16px;
+}
+
+.Main .Item {
+	border-top: 1px solid #d8d8d8;
+}
+
+.Main .Item:first-of-type {
+	border-top: 0px;
+}
+
+
+.Item {
+	justify-content: flex-start;
+	transition-duration: 0.3s;
+}
+
+.Item:hover {
+	background-color: #d8d8d8;
+	transition-duration: 0.3s;
+}
+
+.Item img {
+	width: 35%;
+	margin: 18px 16px;
+}
+
+.Item span {
+	margin: 8px 0;
+	display: block;
+}
+
+.Learning {
+	padding: 0 72px;
+}
+
+.Learning .Max,
+.Thesis .Max {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.Learning h2,
+.Thesis h2 {
+	text-align: center;
+	width: 100%;
+}
+
+.Card {
+	display: inline-flex;
+    flex-direction: column;
+    width: calc(33% - 32px);
+    margin-bottom: 32px;
+    background-color: #ffffff;
+	padding-bottom: 24px;
+}
+
+.Card:nth-last-of-type(2),
+.Card:nth-last-of-type(5) {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.Card img {
+	width: 100%;
+}
+
+.Card h3 {
+	margin: 16px;
+}
+
+.Card span {
+	margin: 8px 16px 0;
+	opacity: 0.85;
+}
+
+.Card span:first-of-type {
+	letter-spacing: 1.1px;
+}
+
+.Thesis .MainFeature {
+	margin-top: 0px;
+}
+
+.Thesis .SecondaryFeature {
+	border-left: 0px;
+	padding-top: 0px;
+}
+
+.Thesis h3 {
+	margin: 24px 0;
+}
+
+/*Footer Styles*/
+footer {
+	padding: 16px 24px;
+	font-size: 0.75rem;
+	border-top: 1px solid #d8d8d8;
+}
+
+footer .Max {
+	justify-content: space-between;
+}
+
+/*Media Break: Tablet*/
+@media only screen and (max-width : 850px) {
+	/*Font Sizes*/
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+	}
+
+	.Hero p {
+		font-size: 1.2rem;
+	}
+
+	.Card span,
+	.Copy span,
+	p {
+		font-size: 0.9rem;
+	}
+
+	/*Tablet Hero and Header*/
+	nav a:nth-of-type(3) {
+		display: none;
+	}
+
+	.Hero .Max,
+	.Main .Max,
+	.Thesis .Max {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.Hero img,
+	.Hero .Copy,
+	.SecondaryFeature {
+		width: auto;
+		max-width: 100%;
+	}
+
+	.Hero img {
+		margin: 0;
+	}
+
+	.Hero .Copy {
+		padding: 32px 16px;
+	}
+
+	.MainFeature {
+		width: auto;
+		padding: 0 16px;
+		margin: 32px 0px;
+	}
+
+	.Item img.Desktop {
+		max-width: 200px;
+	}
+
+	.Learning {
+		padding: 0 16px;
+	}
+
+	/*Tablet Content*/
+	.Thesis .SecondaryFeature {
+		display: inline-flex; /*Fixes overflow element at certain sizes*/
+		flex-direction: column;
+	}
+}
+
+/*Media Break: Mobile*/
+@media only screen and (max-width : 480px) {
+	.White,
+	.Light {
+		background: none;
+	}
+
+	.Desktop,
+	header .Desktop,
+	.Logo,
+	footer .Links{
+		display: none;
+	}
+
+	.Mobile {
+		display: flex;
+	}
+
+	/*Mobile Header*/
+	header .Mobile {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	a.Gray {
+		background-color: #9b9b9b;
+	}
+
+	nav a:nth-of-type(3) {
+		display: block;
+	}
+
+	/*Mobile Content*/
+	.SecondaryFeature {
+		padding-top: 0px;
+		border: 0;
+	}
+
+	.Main .Item {
+		flex-direction: column;
+		border: 0px;
+		padding: 16px 16px 32px;
+	}
+
+	.Item img {
+		padding: 0;
+		width: 100%;
+		margin: 0;
+	}
+
+	.Ratio {
+		padding: 18px 0px; /*Maintain image ratio for mobile*/
+	}
+
+	.Item .Copy {
+		width: 100%;
+		padding: 0 16px;
+	}
+
+	.Learning {
+		padding: 0 16px 32px;
+		border-top: 1px solid #d8d8d8;
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+	.Card {
+		width: 100%;
+		padding: 16px 16px;
+		margin-bottom: 8px;
+		background-color: #d8d8d8;
+	}
+
+	.Card:nth-last-of-type(2),
+    .Card:nth-last-of-type(5) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.Card:last-of-type {
+		margin-bottom: 0px;
+	}
+
+	.MainFeature {
+		width: auto;
+		margin: 32px 0 24px;
+	}
+
+	.Thesis .SecondaryFeature {
+		display: none;
+	}
+}
